@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
 
-  <link rel="stylesheet" href="assets/css/login-style.css">
+  <link rel="stylesheet" href="View/assets/css/login-style.css">
 </head>
-<body style="background-image: url(assets/img/cite.jpg);">
+<body style="background-image: url(View/assets/img/cite.jpg);">
 
   <div class="container">
 
@@ -22,11 +22,12 @@
 
       <button>Go Back</button>
     </nav>  
+    
 
-    <form>
+    <form action="/" method="POST">
 
-      <input type="email" id="email" placeholder="Email">
-      <input type="password" id="password" placeholder="Password">
+      <input name="log_email" type="email" id="email" placeholder="Email">
+      <input name="log_password" type="password" id="password" placeholder="Password">
 
 
       <div class="contain">
