@@ -119,3 +119,26 @@ form  input[type=submit]:hover{
   background-color: rgba(0, 141, 228, 0.966);
 }
 
+/* sign in design  */
+
+.mission-vision-container{
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+}
+
+.mission-vision-container > div{
+  width: 300px;
+  font-size: 1.3rem;
+  background-color: rgba(158, 2, 2, 0.746);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  color: white;
+  text-align: center;
+}
+
+.mission-vision-container > .mission-container{
+  background-color: rgba(2, 124, 35, 0.704);
+}
+

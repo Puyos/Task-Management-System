@@ -58,6 +58,7 @@ nav > .navigation > button:hover{
 main{
   width: 80%;
   height: 100vh;
+  position: relative;
 }
 
 main > header{
@@ -73,6 +74,7 @@ main > header{
 main > .home{
   height: 90%;
   padding: 20px;
+  position: relative;
 }
 
 main > .home > .welcome-message{
@@ -145,4 +147,163 @@ main > .home > .content > .achievements > div{
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.695);
 }
 
+/* task design  */
 
+.task-content{
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.612);
+  padding: 5px;
+  overflow: auto;
+}
+
+.task-content > table {
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+
+.task-content > table tr{
+  border-bottom: 1px solid black; 
+  height: 200px;
+}
+
+.task-content > table tr:first-child{
+  height: 50px;
+}
+
+.add-btn{
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(214, 214, 214);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.623);
+}
+
+.add-btn:hover{
+  background-color: rgb(161, 161, 161);
+}
+
+
+/* user add design  */
+
+.user-add-design{
+  width: 100%;
+  height: 100%;
+  margin-top: -100px;
+  padding: 20px;
+}
+
+.user-add-design > .info-container{
+  background-color: rgb(213, 213, 213);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  height: 80%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.486);
+}
+
+.user-add-design > .info-container > .vertical-line{
+  border: 1px solid black;
+}
+
+.user-add-design > .info-container > div{
+
+}
+
+.user-add-design > .info-container > .user-info,
+.user-add-design > .info-container > .user-acc{
+  width: 49%;
+  padding: 10px;
+}
+
+.user-add-design > .info-container > .user-info label,
+.user-add-design > .info-container > .user-acc label{
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.user-add-design > .info-container > .user-info input,
+.user-add-design > .info-container > .user-acc input, select{
+  margin-left: 20px;
+  font-size: 1.5rem;
+  width: 90%;
+  color: black;
+}
+
+.avatar-container{
+  width: 45%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  overflow: hidden;
+}
+.avatar-container > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-add-design > input,
+.user-add-design > button{
+  position: absolute;
+  bottom: 40px;
+  width: 200px;
+  font-size: 1.5rem;
+}
+
+.user-add-design > input {
+  left: 50px;
+}
+
+.user-add-design > button{
+  left: 300px;
+}
+
+
+
+/* add-project-container design  */
+
+.add-project-container{
+  background-color: rgb(213, 213, 213);
+  width: 100%;
+  height: 80%;
+  margin-top: -50px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.257);
+}
+
+.add-project-container label{
+  display: inline-block;
+  width: 49%;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.add-project-container input{
+  width: 49%;
+  font-size: 1.5rem;
+}
+
+.add-project-container > textarea{
+  width: 99%;
+  min-height: 100px;
+}
