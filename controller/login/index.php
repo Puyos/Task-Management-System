@@ -12,10 +12,10 @@ if(!empty($_POST))
 
         if($result['email'] == $_POST['log_email'] && $result['password'] == $_POST['log_password'])
         {
-            echo 'You login successfully';
+            redirect("/admin");
             die();
         }else {
-            echo 'You wrong password';
+            redirect("/login");
             die();
         }
 
@@ -27,4 +27,4 @@ if(!empty($_POST))
 }
 
 
-require 'View/login.html';
+view ('login.php');
