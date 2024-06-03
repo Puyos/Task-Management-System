@@ -10,6 +10,8 @@ if(!empty($_POST))
             'email' => $_POST['log_email']
         ])->fetch();
 
+        if(!$result) redirect('/login');
+
         if($result['email'] == $_POST['log_email'] && $result['password'] == $_POST['log_password'])
         {
             redirect("/admin");

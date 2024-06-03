@@ -4,6 +4,8 @@ require 'Model/function.php';
 require 'Model/Database.php';
 
 $uri = parse_url($_SERVER["REQUEST_URI"])['path'];
+     
+
 
 switch( $uri )
 {
